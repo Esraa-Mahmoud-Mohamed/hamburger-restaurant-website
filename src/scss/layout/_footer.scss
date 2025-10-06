@@ -1,0 +1,51 @@
+.footer {
+    background: #fff;
+    color: #363635;
+
+
+
+    h6 {
+        color: #363635;
+    }
+
+    a {
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #AE2F37;
+        }
+    }
+    .brand {
+        color: #AE2F37;
+    }
+
+    .social-icons i {
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #C21C32;
+        }
+    }
+
+    .footer-top {
+        border-top: 1px solid #ddd;
+    }
+
+    p,
+    li {
+        font-size: 0.9rem;
+    }
+
+    // Responsive
+    @media (max-width: 575.98px) {
+        .footer-top {
+            text-align: center;
+        }
+
+        .social-icons {
+            justify-content: center;
+            display: flex;
+        }
+    }
+}
