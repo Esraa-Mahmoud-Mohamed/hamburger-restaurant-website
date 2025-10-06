@@ -1,0 +1,329 @@
+.navbar {
+    background-color: white;
+
+    // .container {
+    //     margin: 0 24px;
+    //     width: 100%;
+    // }
+    .container-fluid {
+        gap: 1rem;
+        flex-wrap: nowrap;
+        margin: 0 1.5rem;
+
+        @media (max-width: 575.98px) {
+            // Bootstrap "sm" breakpoint
+            margin: 0 0.5rem;
+        }
+    }
+
+    position: relative;
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%; // places it directly below the navbar
+        left: 0;
+        width: 50%;
+        background-color: #fff; // ensures it’s visible on white background
+        z-index: 1000;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+        @media (min-width: 576px) {
+            position: static;
+            box-shadow: none;
+            background: transparent;
+        }
+    }
+
+    .navbar-brand {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        color: #AE2F37;
+    }
+    .navbar-nav {
+        flex: 1;
+        align-items: center;
+    }
+
+    .nav-link {
+        color: #363635;
+        position: relative;
+        transition: color 0.3s ease;
+        white-space: nowrap;
+
+        &:hover,
+        &.active {
+            color: #AE2F37;
+        }
+
+        // 🔻 Red underline effect for active link
+        &.active::after {
+            content: "";
+            position: absolute;
+            left: 20px;
+            bottom: -16px;
+            width: 75%;
+            height: 3px;
+            background-color: #AE2F37;
+            border-radius: 10px;
+        }
+
+        // Remove the underline on smaller screens
+        @media (max-width: 575.98px) {
+
+            // Bootstrap "sm" breakpoint
+            &.active::after {
+                display: none;
+            }
+        }
+    }
+
+    .search-form {
+        position: relative;
+        width: 100%;
+
+        .form-control {
+            border: 1px solid #C21C3233;
+            border-radius: 50px;
+            padding-left: 2.5rem;
+            font-size: 0.9rem;
+        }
+
+        .btn-outline-danger {
+            border-radius: 50%;
+            padding: 0.5rem 0.6rem;
+        }
+
+        .bi-search {
+            color: #AE2F37;
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            pointer-events: none; // prevents icon blocking clicks
+
+        }
+    }
+
+    .nav-item {
+        white-space: nowrap;
+        flex: 1;
+        text-align: center;
+
+        i {
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .dropdown-menu {
+        border-radius: 0.5rem;
+    }
+
+    // img {
+    //     object-fit: cover;
+    // }
+
+
+
+    // ✅ Desktop search (center)
+    .search-form {
+        position: relative;
+        width: 100%;
+        max-width: 350px;
+
+        .form-control {
+            border: 1px solid #C21C3233;
+            border-radius: 50px;
+            padding-left: 2.5rem;
+            font-size: 0.9rem;
+        }
+
+        .bi-search {
+            color: #AE2F37;
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+        }
+
+        // Hide on mobile
+        @media (max-width: 575.98px) {
+            display: none;
+        }
+    }
+
+    // // ✅ Mobile search toggle inside icons section
+    // .search-box {
+    //     position: relative;
+    //     display: flex;
+    //     align-items: center;
+
+    //     input[type="checkbox"] {
+    //         display: none;
+    //     }
+
+    //     .search-icon {
+    //         cursor: pointer;
+    //         font-size: 1.3rem;
+    //         // color: #AE2F37;
+    //     }
+
+    //     .search-input {
+    //         width: 0;
+    //         opacity: 0;
+    //         border: 1px solid #C21C3233;
+    //         border-radius: 50px;
+    //         padding: 4px 8px;
+    //         font-size: 0.9rem;
+    //         margin-left: 8px;
+    //         transition: width 0.4s ease, opacity 0.4s ease;
+    //     }
+
+    //     // Show input when clicked (only on mobile)
+    //     input[type="checkbox"]:checked~.search-input {
+    //         width: 160px;
+    //         opacity: 1;
+    //     }
+
+    //     // Hide entire mobile search on desktop
+    //     @media (min-width: 576px) {
+    //         display: none;
+    //     }
+    // }
+
+    .right-icons {
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: nowrap; // ✅ Prevent wrapping
+        gap: 0.5rem;
+        margin-left: auto; // ✅ Push to the far right
+        padding: 0; // ✅ Remove unnecessary padding
+
+        ul.navbar-nav {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0; // ✅ Remove default Bootstrap margins
+            padding: 0;
+            flex-wrap: nowrap; // ✅ Keep all items on one line
+        }
+
+        .nav-item {
+            margin: 0; // ✅ Prevent extra spacing between items
+        }
+
+        .nav-link {
+            padding: 0.25rem 0.5rem;
+            white-space: nowrap;
+
+            i {
+                font-size: 1.2rem;
+            }
+        }
+
+        // ✅ Make sure it doesn’t drop down on small screens
+        @media (max-width: 575.98px) {
+            flex-shrink: 0;
+            flex-wrap: nowrap;
+        }
+
+
+
+        img {
+            object-fit: cover;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+
+            // ✅ Default size for desktop
+            width: 40px;
+            height: 40px;
+
+            // ✅ Medium screens (tablet)
+            @media (max-width: 768px) {
+                width: 34px;
+                height: 34px;
+            }
+
+            // ✅ Small screens (mobile)
+            @media (max-width: 576px) {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            display: none !important;
+            .right-icons ul.navbar-nav {
+                gap: 0.25rem;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+        background: transparent;
+    }
+
+    // .right-icons {
+    //     @media (max-width: 575.98px) {
+    //         display: none !important;
+    //     }
+    // }
+
+    @media (max-width: 575.98px) {
+        /* Navbar base */
+        .navbar {
+            position: relative;
+            z-index: 1000;
+        }
+
+        /* Collapsed menu — opens below navbar */
+        .navbar-collapse {
+            position: absolute;
+            top: 100%;
+            // left: 10px;
+            // right: 10px;
+            margin: 0 5%;
+            width: 90%;
+            background: #fff;
+            border-radius: 15px 15px 15px 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            padding: 1rem 0;
+            z-index: 1001;
+            transition: all 0.4s ease;
+        }
+
+        /* Center menu items in the dropdown */
+        .navbar-nav {
+            align-items: center;
+        }
+
+        /* ===== Overlay (dimmed background) ===== */
+        .navbar-overlay {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            /* dim effect */
+            z-index: 999;
+            /* below menu, above page */
+            display: none;
+            /* hidden by default */
+        }
+
+        /* When navbar is open, show overlay */
+        .navbar-collapse.show+.navbar-overlay {
+            display: block;
+        }
+
+    }
+
+}
