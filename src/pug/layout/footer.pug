@@ -1,51 +1,55 @@
-footer.footer.py-4.mt-5
+footer.footer.py-4
   .container
-    .row.align-items-start.border-top.pt-4
+    // Top row: brand (left) and tagline+social (right)
+    .row.align-items-start.mb-3
+      .col-lg-6.col-md-12
+        a.footer-brand.fw-bold(href="#") BURGER
+      .col-lg-6.col-md-12.top-section
+        p.text-dark.mb-2
+          | We Believe Burgers Should Be More Than Fast Food — They Should Be An Experience…
+        .social-icons
+          a.me-3(href="#", aria-label="facebook")
+            img(src="assets/icons/footer/facebook.svg", alt="Facebook", width="30", height="30")
+          a.me-3(href="#", aria-label="whatsapp")
+            img(src="assets/icons/footer/09.whatsapp.svg", alt="WhatsApp", width="30", height="30")
+          a.me-3(href="#", aria-label="instagram")
+            img(src="assets/icons/footer/instgram.svg", alt="Instagram", width="30", height="30")
+ 
 
-      // Left Column – Brand + Copyright
-      .col-md-3.mb-4.mb-md-0
-        a.brand.fw-bold(href="#") BURGER
-        p.text-muted.small.mt-3 All Copywrite Reserved For BURGER©2025
+    // thin divider
+    hr.my-3
 
-      // Center Column – Quick Links
-      .col-md-3.mb-4.mb-md-0
+    // Three columns: quick links / services / contact
+    .row.mb-3
+      .col-md-4.mb-4.mb-md-0
         h6.fw-semibold.mb-3 Quick Links
-        ul.list-unstyled
-          li: a.text-decoration-none.text-dark(href="#") About us
-          li: a.text-decoration-none.text-dark(href="#") Privacy & Policy
-          li: a.text-decoration-none.text-dark(href="#") Terms & Condition
-          li: a.text-decoration-none.text-dark(href="#") FQA
+        ul.list-unstyled.mb-0
+          li.mb-2: a.small(href="#") About us
+          li.mb-2: a.small(href="#") Privacy & Policy
+          li.mb-2: a.small(href="#") Terms & Condition
+          li.mb-2: a.small(href="#") FAQ
 
-      // Center Column – Our Services
-      .col-md-3.mb-4.mb-md-0
+      .col-md-4.mb-4.mb-md-0
         h6.fw-semibold.mb-3 Our services
-        ul.list-unstyled
-          li: a.text-decoration-none.text-dark(href="#") Burger Sandwiches
-          li: a.text-decoration-none.text-dark(href="#") Burger Meals
-          li: a.text-decoration-none.text-dark(href="#") Burger With
+        ul.list-unstyled.mb-0
+          li.mb-2: a.small(href="#") Burger Sandwiches
+          li.mb-2: a.small(href="#") Burger Meals
+          li.mb-2: a.small(href="#") Burger With
 
-      // Right Column – Contact Info
-      .col-md-3
+      .col-md-4
         h6.fw-semibold.mb-3 Contact Info
-        ul.list-unstyled.text-muted
-          li.mb-2
-            i.bi.bi-envelope.text-danger.me-2
+        ul.list-unstyled.mb-0
+          li.mb-2.d-flex.align-items-center
+            img(src="assets/icons/footer/icon (1).svg", alt="Email", width="18", height="18", class="me-2")
             | info@Burger.com
-          li.mb-2
-            i.bi.bi-geo-alt.text-danger.me-2
+          li.mb-2.d-flex.align-items-center
+            img(src="assets/icons/footer/icon (2).svg", alt="Location", width="18", height="18", class="me-2")
             | Plot No. 9 - Model A - Nasr City
-          li.mb-2
-            i.bi.bi-telephone.text-danger.me-2
+          li.mb-2.d-flex.align-items-center
+            img(src="assets/icons/footer/icon (3).svg", alt="Phone", width="18", height="18", class="me-2")
             | 19011
 
-    // Top Right Section
-    .footer-top.text-end.mt-4.border-top.pt-3
-      p.text-muted.small.mb-1 
-        | We Believe Burgers Should Be More Than Fast Food — They Should Be An Experience…
-      .social-icons.mt-2
-        a.text-danger.me-3(href="#")
-          i.bi.bi-facebook
-        a.text-danger.me-3(href="#")
-          i.bi.bi-instagram
-        a.text-danger(href="#")
-          i.bi.bi-twitter
+    // Bottom copyright row
+    .row
+      .col-12
+        p.small.text-muted.mb-0 All Copywrite Reserved For BURGER©2025

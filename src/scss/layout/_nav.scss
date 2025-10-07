@@ -1,6 +1,6 @@
 .navbar {
-    background-color: white;
-
+    background-color: var(--primary_white);
+    font-family: var(--font_family);
     // .container {
     //     margin: 0 24px;
     //     width: 100%;
@@ -23,7 +23,7 @@
         top: 100%; // places it directly below the navbar
         left: 0;
         width: 50%;
-        background-color: #fff; // ensures it’s visible on white background
+        background-color: var(--primary_white); // ensures it’s visible on white background
         z-index: 1000;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
@@ -37,7 +37,8 @@
     .navbar-brand {
         font-size: 1.3rem;
         letter-spacing: 1px;
-        color: #AE2F37;
+        color: var(--primary_brown);
+        font-family: var(--font_family);
     }
     .navbar-nav {
         flex: 1;
@@ -45,14 +46,15 @@
     }
 
     .nav-link {
-        color: #363635;
+        color: var(--nav_bar_light_grey);
+        font-family: var(--font_family);
         position: relative;
         transition: color 0.3s ease;
         white-space: nowrap;
 
         &:hover,
         &.active {
-            color: #AE2F37;
+            color: var(--primary_brown);
         }
 
         // 🔻 Red underline effect for active link
@@ -63,7 +65,7 @@
             bottom: -16px;
             width: 75%;
             height: 3px;
-            background-color: #AE2F37;
+            background-color: var(--primary_brown);
             border-radius: 10px;
         }
 
@@ -94,7 +96,7 @@
         }
 
         .bi-search {
-            color: #AE2F37;
+            color: var(--primary_brown);
             position: absolute;
             top: 50%;
             left: 15px;
@@ -129,19 +131,20 @@
 
     // ✅ Desktop search (center)
     .search-form {
+        font-family: var(--font_family);
         position: relative;
         width: 100%;
         max-width: 350px;
 
         .form-control {
-            border: 1px solid #C21C3233;
+            border: 1px solid var(--search_form_border);
             border-radius: 50px;
             padding-left: 2.5rem;
             font-size: 0.9rem;
         }
 
         .bi-search {
-            color: #AE2F37;
+            color: var(--primary_brown);
             position: absolute;
             top: 50%;
             left: 15px;
@@ -290,7 +293,7 @@
             // right: 10px;
             margin: 0 5%;
             width: 90%;
-            background: #fff;
+            background: var(--primary_white);
             border-radius: 15px 15px 15px 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
             padding: 1rem 0;
