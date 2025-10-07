@@ -1,51 +1,104 @@
 .footer {
-    background: #fff;
-    color: #363635;
+  background: var(--primary_white);
+  color: var(--footer_light_black);
+  font-family: var(--font_family);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
+  .footer-brand {
+    font-family: var(--font_family);
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    color: var(--primary_brown);
+    text-decoration: none;
+  }
 
+  hr {
+    border: 0;
+    border-top: 1px solid var(--devider);
+    opacity: 12%;
+    margin: .75rem 0 1rem;
+  }
+
+  h6 {
+    font-family: var(--font_family);
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: .9rem;
+  }
+
+  ul {
+    li {
+      a {
+        font-family: var(--font_family);
+        color: var(--footer_light_black);
+        text-decoration: none;
+        font-size: 0.9rem;
+        display: inline-block;
+        transition: color .2s;
+        &:hover { color: var(--primary_brown); }
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    a {
+      color: var(--primary_brown);
+      font-size: 1.05rem; // icon size
+      display: inline-block;
+      transition: color .2s;
+      &:hover { color: #C21C32; }
+    }
+  }
+
+  p.small {
+    font-size: 0.85rem;
+    color: var(footer_copyright_grey);
+  }
+
+  // Responsive tweaks
+  @media (max-width: 767.98px) {
+    .row {
+      flex-direction: column !important;
+      text-align: center !important;
+    }
+
+    .col-lg-6,
+    .col-md-12,
+    .col-md-4 {
+      width: 100% !important;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .top-section {
+      margin-top: 1rem;
+    }
+
+    // ✅ Stack social icons vertically on mobile
+    .social-icons {
+      flex-direction: column !important;
+      align-items: center !important;
+      gap: 0.5rem;
+      a {
+        margin-right: 0 !important;
+      }
+    }
 
     h6 {
-        color: #363635;
+      font-size: 0.95rem;
     }
 
-    a {
-        transition: color 0.3s ease;
-
-        &:hover {
-            color: #AE2F37;
-        }
-    }
-    .brand {
-        color: #AE2F37;
+    ul li a {
+      font-size: 0.88rem;
     }
 
-    .social-icons i {
-        font-size: 1.2rem;
-        transition: color 0.3s ease;
-
-        &:hover {
-            color: #C21C32;
-        }
+    .footer-brand {
+      font-size: 1.1rem;
     }
-
-    .footer-top {
-        border-top: 1px solid #ddd;
-    }
-
-    p,
-    li {
-        font-size: 0.9rem;
-    }
-
-    // Responsive
-    @media (max-width: 575.98px) {
-        .footer-top {
-            text-align: center;
-        }
-
-        .social-icons {
-            justify-content: center;
-            display: flex;
-        }
-    }
+  }
 }
