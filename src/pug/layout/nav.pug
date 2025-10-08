@@ -1,0 +1,54 @@
+nav.navbar.navbar-expand-sm.navbar-light.py-3
+  .container-fluid
+    // 🔹 Left side: Brand
+    a.navbar-brand.fw-bold(href="#") BURGER
+
+    // 🔹 Right side: Toggler (shows only on mobile)
+    button.navbar-toggler.ms-auto(type="button", data-bs-toggle="collapse", data-bs-target="#navbarNav")
+      span.navbar-toggler-icon
+
+    // 🔹 Collapsed menu
+    .collapse.navbar-collapse#navbarNav
+      ul.navbar-nav.me-auto.mb-2.mb-lg-0
+        li.nav-item
+          a.nav-link.active.fw-semibold(href="#") Home
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#", role="button", data-bs-toggle="dropdown") Categories
+          ul.dropdown-menu
+            li: a.dropdown-item(href="#") Beef Burger
+            li: a.dropdown-item(href="#") Chicken Burger
+            li: a.dropdown-item(href="#") Veggie Burger
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#", role="button", data-bs-toggle="dropdown") Our Branches
+          ul.dropdown-menu
+            li: a.dropdown-item(href="#") Cairo
+            li: a.dropdown-item(href="#") Alexandria
+        li.nav-item
+          a.nav-link(href="#") Contact Us
+    
+    // overlay for dim background
+    .navbar-overlay
+    
+    // ✅ Desktop search (center) — hidden on mobile
+    form.search-form.d-none.d-sm-flex.mx-auto(role="search")
+      i.bi.bi-search
+      input.form-control.me-2(type="search", placeholder="Search for a meal or sandwich..." name="search" aria-label="Search")
+
+    // ✅ Right-side icons (hide on mobile)
+    .right-icons.d-none.d-sm-flex.align-items-center.flex-nowrap
+      ul.navbar-nav.d-flex.align-items-center
+        li.nav-item
+          a.nav-link(href="#")
+            i.bi.bi-globe
+        li.nav-item
+          a.nav-link(href="#")
+            i.bi.bi-bell
+        li.nav-item.dropdown.d-flex.align-items-center
+          img(src="assets/images/nav/profile.svg", alt="User", class="rounded-circle me-2", width="40", height="40")
+          span.username.d-none.d-md-inline Abdo Yasser
+          a.nav-link.dropdown-toggle.d-flex.align-items-center(href="#", role="button", data-bs-toggle="dropdown")
+          ul.dropdown-menu.dropdown-menu-end
+            li: a.dropdown-item(href="#") Profile
+            li: a.dropdown-item(href="#") Logout
+
+    
