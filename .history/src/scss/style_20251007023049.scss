@@ -1,0 +1,12 @@
+// Import global styles first
+@import './global/_global';
+@import './helpers/_images_sizes';
+
+// Import layout components
+@import './layout/_nav';
+@import './layout/_footer';
+
+// Import page-specific styles
+@import './home';
+@import './login';
+@import './_signup';

@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/scss/_signup.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1759787061752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1759787065314,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-.sign\n\\ No newline at end of file\n+.signUp{\n+    \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759787067212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n .signUp{\n+\n     \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759787077041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n .signUp{\n \n-    \n+display:\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759787077102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n .signUp{\n \n-display:\n+display:f\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759787083500,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n .signUp{\n \n-display:f\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759787091844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n .signUp{\n \n-image si\n+image \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1759787121494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n .signUp{\n \n .image-side{\n     width: ;\n+    hi\n }\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1759787061752,
+            "name": "Commit-0",
+            "content": ".sign"
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+:root {
+  --primary_brown:#AE2F37;
+  --placeholder:#BDBDBD;
+  --primary_white:#FFFFFF;
+  --primary_black:#000000;
+  --input_background:#424B5A;
+  --page_background:#F4F4F4;
+  --brgr_background:#7C2127;
+  --featured_brgr_background:#F7EAEB;
+  --nav_bar_light_grey:#363635;
+  --devider:#222222;
+  --footer_light_black:#1B1B1B;
+  --footer_copyright_grey:#7C7C7C;
+  --font_family: "neon", sans-serif;
+  --font_size_regular:18px;
+  --font_size_h2:36px;
+  --font_size_p_form:20px;
+  --font_size_p:26px;
+  --font_size_h4:84px;
+  --font_size_h1:96px;
+  --font_size_h3_featured:38px;
+  --font_size_p_featured:18px;
+  --font_size_card_name:22px;
+  --font_size_card_description:18px;
+  --font_size_price:30px;
+}
+
+:root {
+  --form_page_image_width:939;
+  --form_page_image_height:989px;
+  --home_page_image_width:614px;
+  --home_page_image_height:919px;
+  --featured_page_image_width:502px;
+  --featured_page_image_height:207px;
+  --our_story_page_image_width:774px;
+  --our_story_page_image_height:650px;
+  --experience_page_image_width:680px;
+  --experience_page_image_height:451px;
+  --contact_page_image_width:1922px;
+  --contact_page_image_height:763px;
+}
+
+.signUp .image-side {
+  width: var(--form_page_image_width);
+  height: var(--form_page_image_height);
+  margin-right: 40px;
+}
+
+/* Additional form styling */
+.form-side {
+  padding: 2rem;
+}
+.form-side .form-group {
+  margin-bottom: 1.5rem;
+}
+.form-side .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--primary_black);
+}
+.form-side .form-control {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: var(--input_background);
+  color: var(--primary_white);
+  font-size: var(--font_size_regular);
+}
+.form-side .form-control::placeholder {
+  color: var(--placeholder);
+}
+.form-side .btn-primary {
+  background-color: var(--primary_brown);
+  border-color: var(--primary_brown);
+  padding: 0.75rem 2rem;
+  font-size: var(--font_size_regular);
+  border-radius: 4px;
+}
+.form-side .btn-primary:hover {
+  background-color: #8a252a;
+  border-color: #8a252a;
+}
+.form-side h4 {
+  font-size: var(--font_size_h2);
+  color: var(--primary_black);
+  margin-bottom: 1rem;
+}
+.form-side p {
+  font-size: var(--font_size_p_form);
+  color: var(--primary_black);
+  margin-bottom: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
