@@ -4,8 +4,12 @@
 --placeholder:#BDBDBD;
 --primary_white:#FFFFFF;
 --primary_black:#000000;
---input_background:#424B5A;
+--input_border:rgba(66, 75, 90, 0.2);
+--input_background:rgba(233, 237, 245, 1);
+--input:rgba(161, 174, 183, 1);
 --page_background:#F4F4F4;
+
+
 
 //nav
 --search_form_border:#C21C3233;
@@ -28,7 +32,9 @@
  /////////////////////////////////////////////////////////////////////////////////////
 
  //fonts
-  --font_family: 'neon', sans-serif;
+  --font_family: 'Neo Sans Arabic', sans-serif;
+;
+  --font_family_home_first_section: 'cairo' , sans-serif;
   --font_size_regular:18px;
 //form h+p
 --font_size_h2:36px;

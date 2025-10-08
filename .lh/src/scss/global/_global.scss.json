@@ -1,0 +1,122 @@
+{
+    "sourceFile": "src/scss/global/_global.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 26,
+            "patches": [
+                {
+                    "date": 1759845973934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1759845979853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n  /////////////////////////////////////////////////////////////////////////////////////\n \n  //fonts\n   --font_family: 'neon', sans-serif;\n-  \n+  --font\n   --font_size_regular:18px;\n //form h+p\n --font_size_h2:36px;\n --font_size_p_form:20px;\n"
+                },
+                {
+                    "date": 1759845985220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n  /////////////////////////////////////////////////////////////////////////////////////\n \n  //fonts\n   --font_family: 'neon', sans-serif;\n-  --font\n+  --font_family\n   --font_size_regular:18px;\n //form h+p\n --font_size_h2:36px;\n --font_size_p_form:20px;\n"
+                },
+                {
+                    "date": 1759845990607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n  /////////////////////////////////////////////////////////////////////////////////////\n \n  //fonts\n   --font_family: 'neon', sans-serif;\n-  --font_family\n+  --font_family_home_\n   --font_size_regular:18px;\n //form h+p\n --font_size_h2:36px;\n --font_size_p_form:20px;\n"
+                },
+                {
+                    "date": 1759845995908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n  /////////////////////////////////////////////////////////////////////////////////////\n \n  //fonts\n   --font_family: 'neon', sans-serif;\n-  --font_family_home_\n+  --font_family_home_first_\n   --font_size_regular:18px;\n //form h+p\n --font_size_h2:36px;\n --font_size_p_form:20px;\n"
+                },
+                {
+                    "date": 1759846001486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n  /////////////////////////////////////////////////////////////////////////////////////\n \n  //fonts\n   --font_family: 'neon', sans-serif;\n-  --font_family_home_first_\n+  --font_family_home_first_section: 'cairo', sans-serif;\n   --font_size_regular:18px;\n //form h+p\n --font_size_h2:36px;\n --font_size_p_form:20px;\n"
+                },
+                {
+                    "date": 1759846010137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n  /////////////////////////////////////////////////////////////////////////////////////\n \n  //fonts\n   --font_family: 'neon', sans-serif;\n-  --font_family_home_first_section: 'cairo', sans-serif;\n+  --font_family_home_first_section: ;\n   --font_size_regular:18px;\n //form h+p\n --font_size_h2:36px;\n --font_size_p_form:20px;\n"
+                },
+                {
+                    "date": 1759846032858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n  /////////////////////////////////////////////////////////////////////////////////////\n \n  //fonts\n   --font_family: 'neon', sans-serif;\n-  --font_family_home_first_section: ;\n+  --font_family_home_first_section: 'cairo';\n   --font_size_regular:18px;\n //form h+p\n --font_size_h2:36px;\n --font_size_p_form:20px;\n"
+                },
+                {
+                    "date": 1759846062677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n  /////////////////////////////////////////////////////////////////////////////////////\n \n  //fonts\n   --font_family: 'neon', sans-serif;\n-  --font_family_home_first_section: 'cairo';\n+  --font_family_home_first_section: 'cairo' ;\n   --font_size_regular:18px;\n //form h+p\n --font_size_h2:36px;\n --font_size_p_form:20px;\n"
+                },
+                {
+                    "date": 1759850150517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n --primary_brown:#AE2F37;\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n---input_background:#424B5A;\n+--input_background:#;\n --page_background:#F4F4F4;\n \n \n //home \n@@ -27,9 +27,9 @@\n  /////////////////////////////////////////////////////////////////////////////////////\n \n  //fonts\n   --font_family: 'neon', sans-serif;\n-  --font_family_home_first_section: 'cairo' ;\n+  --font_family_home_first_section: 'cairo' , sans-serif;\n   --font_size_regular:18px;\n //form h+p\n --font_size_h2:36px;\n --font_size_p_form:20px;\n"
+                },
+                {
+                    "date": 1759850160739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n --primary_brown:#AE2F37;\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n---input_background:#;\n+--input_background:#A1AE;\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850166422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n --primary_brown:#AE2F37;\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n---input_background:#A1AE;\n+--input_background:#A1AEB7;\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850225955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n --primary_brown:#AE2F37;\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n---input_background:#A1AEB7;\n+--input_background:##424B5A;\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850302662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n --primary_brown:#AE2F37;\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n---input_background:##424B5A;\n+--input_background:r#424B5A;\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850310269,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n --primary_brown:#AE2F37;\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n---input_background:r#424B5A;\n+--input_background:rgb(#424B5A);\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850318758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n --primary_brown:#AE2F37;\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n---input_background:rgb(#424B5A);\n+--input_background:rgb(#424B5A),0.2);\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850396736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n --primary_brown:#AE2F37;\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n---input_background:rgb(#424B5A),0.2);\n+--input_background:rgb(#424B5A,0.5);\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850413221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n --primary_brown:#AE2F37;\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n---input_background:rgb(#424B5A,0.5);\n+--input_background:#424B5A;\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850485681,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n --primary_brown:#AE2F37;\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n---input_background:#424B5A;\n+--input_background:rgba(66, 75, 90, 0.2)\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850548933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n --primary_brown:#AE2F37;\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n---input_background:rgba(66, 75, 90, 0.2)\n+--input_background:rgba(66, 75, 90, 0.2);\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850627721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n --primary_brown:#AE2F37;\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n---input_background:rgba(66, 75, 90, 0.2);\n+--input_border_background:rgba(66, 75, 90, 0.2);\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850636196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n --input_border_background:rgba(66, 75, 90, 0.2);\n+--input\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850642318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n --input_border_background:rgba(66, 75, 90, 0.2);\n---input\n+--input_background:#F4F4F4;\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850649629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n --primary_brown:#AE2F37;\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n---input_border_background:rgba(66, 75, 90, 0.2);\n+--input_border:rgba(66, 75, 90, 0.2);\n --input_background:#F4F4F4;\n --page_background:#F4F4F4;\n \n \n"
+                },
+                {
+                    "date": 1759850714648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n --placeholder:#BDBDBD;\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n --input_border:rgba(66, 75, 90, 0.2);\n---input_background:#F4F4F4;\n+--input_background:;\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850821898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n --input_border:rgba(66, 75, 90, 0.2);\n --input_background:rgba(233, 237, 245, 1);\n-\n+--\n --page_background:#F4F4F4;\n \n \n //home \n"
+                },
+                {
+                    "date": 1759850822530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n --primary_white:#FFFFFF;\n --primary_black:#000000;\n --input_border:rgba(66, 75, 90, 0.2);\n --input_background:rgba(233, 237, 245, 1);\n---input\n+--input\":\n --page_background:#F4F4F4;\n \n \n //home \n"
+                }
+            ],
+            "date": 1759845973934,
+            "name": "Commit-0",
+            "content": ":root{\n //general in all pages\n--primary_brown:#AE2F37;\n--placeholder:#BDBDBD;\n--primary_white:#FFFFFF;\n--primary_black:#000000;\n--input_background:#424B5A;\n--page_background:#F4F4F4;\n\n\n//home \n//home burger background color\n--brgr_background:#7C2127;\n//featured brgr background color\n--featured_brgr_background:#F7EAEB;\n//nav bar text color\n--nav_bar_light_grey:#363635;\n\n\n//devider between sections\n--devider:#222222;\n\n//footer text colors\n--footer_light_black:#1B1B1B;\n--footer_copyright_grey:#7C7C7C;\n\n /////////////////////////////////////////////////////////////////////////////////////\n\n //fonts\n  --font_family: 'neon', sans-serif;\n  \n  --font_size_regular:18px;\n//form h+p\n--font_size_h2:36px;\n--font_size_p_form:20px;\n //main section\n--font_size_p:26px;\n--font_size_h4:84px;\n--font_size_h1:96px;\n\n//other sections h3+p\n--font_size_h3_featured:38px;\n--font_size_p_featured:18px;\n   //cards\n--font_size_card_name:22px;\n--font_size_card_description:18px;\n--font_size_price:30px;\n\n}\n"
+        }
+    ]
+}
