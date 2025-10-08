@@ -1,0 +1,67 @@
+:root {
+  --primary_brown:#AE2F37;
+  --placeholder:#BDBDBD;
+  --primary_white:#FFFFFF;
+  --primary_black:#000000;
+  --input_background:#424B5A;
+  --page_background:#F4F4F4;
+  --brgr_background:#7C2127;
+  --featured_brgr_background:#F7EAEB;
+  --nav_bar_light_grey:#363635;
+  --devider:#222222;
+  --footer_light_black:#1B1B1B;
+  --footer_copyright_grey:#7C7C7C;
+  --font_family: "neon", sans-serif;
+  --font_size_regular:18px;
+  --font_size_h2:36px;
+  --font_size_p_form:20px;
+  --font_size_p:26px;
+  --font_size_h4:84px;
+  --font_size_h1:96px;
+  --font_size_h3_featured:38px;
+  --font_size_p_featured:18px;
+  --font_size_card_name:22px;
+  --font_size_card_description:18px;
+  --font_size_price:30px;
+}
+
+:root {
+  --form_page_image_width:939px;
+  --form_page_image_height:989px;
+  --home_page_image_width:614px;
+  --home_page_image_height:919px;
+  --featured_page_image_width:502px;
+  --featured_page_image_height:207px;
+  --our_story_page_image_width:774px;
+  --our_story_page_image_height:650px;
+  --experience_page_image_width:680px;
+  --experience_page_image_height:451px;
+  --contact_page_image_width:1922px;
+  --contact_page_image_height:763px;
+}
+
+body {
+  background-color: var(--page_background);
+  padding: 0px;
+  margin: 0px;
+}
+
+.signUp .image-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+.signUp .image-side img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+.form-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
