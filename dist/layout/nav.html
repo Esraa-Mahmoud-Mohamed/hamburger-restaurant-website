@@ -1,1 +1,47 @@
-<nav class="navbar"> <div class="container"><a class="navbar-brand" href="/">Burger</a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="/">Home</a></li><li class="nav-item"><a class="nav-link" href="/about">categories</a></li><li class="nav-item"><a class="nav-link" href="/">our Brushes</a></li><li class="nav-item"><a class="nav-link" href="/contact">contact us</a></li></ul></div></nav>
+
+<nav class="navbar navbar-expand-sm navbar-light py-3">
+  <div class="container-fluid">
+    <!-- 🔹 Left side: Brand--><a class="navbar-brand fw-bold" href="#">BURGER</a>
+    <!-- 🔹 Right side: Toggler (shows only on mobile)-->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+    <!-- 🔹 Collapsed menu-->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active fw-semibold" href="#">Home</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Beef Burger</a></li>
+            <li><a class="dropdown-item" href="#">Chicken Burger</a></li>
+            <li><a class="dropdown-item" href="#">Veggie Burger</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Our Branches</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Cairo</a></li>
+            <li><a class="dropdown-item" href="#">Alexandria</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- overlay for dim background-->
+    <div class="navbar-overlay"></div>
+    <!-- ✅ Desktop search (center) — hidden on mobile-->
+    <form class="search-form d-none d-sm-flex mx-auto" role="search"><i class="bi bi-search"></i>
+      <input class="form-control me-2" type="search" placeholder="Search for a meal or sandwich..." name="search" aria-label="Search"/>
+    </form>
+    <!-- ✅ Right-side icons (hide on mobile)-->
+    <div class="right-icons d-none d-sm-flex align-items-center flex-nowrap">
+      <ul class="navbar-nav d-flex align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-globe"></i></a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-bell"></i></a></li>
+        <li class="nav-item dropdown d-flex align-items-center"><img class="rounded-circle me-2" src="assets/images/nav/profile.svg" alt="User" width="40" height="40"/><span class="username d-none d-md-inline">Abdo Yasser</span><a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button" data-bs-toggle="dropdown"></a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

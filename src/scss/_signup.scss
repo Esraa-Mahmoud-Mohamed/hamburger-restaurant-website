@@ -7,6 +7,8 @@ body {
   font-family: var(--font_family);
 }
 .signUp {
+      background-color: var(--page_background);
+
   .image-side {
    
       padding: 0px;
@@ -19,7 +21,7 @@ body {
     }
   }
   .form-side {
-      background: linear-gradient(210deg, #eedede 0%, #ffffff 60%);
+      background: linear-gradient(210deg, #eedede 0%, var(--page_background) 60%);
 
     align-items: center;
     justify-content: center;
