@@ -24,7 +24,7 @@ nav.navbar.navbar-expand-sm.navbar-light.py-3
             li: a.dropdown-item(href="#") Cairo
             li: a.dropdown-item(href="#") Alexandria
         li.nav-item
-          a.nav-link(href="#") Contact Us
+          a.nav-link(href="#contact.html") Contact Us
     
     // overlay for dim background
     .navbar-overlay
@@ -49,6 +49,11 @@ nav.navbar.navbar-expand-sm.navbar-light.py-3
           a.nav-link.dropdown-toggle.d-flex.align-items-center(href="#", role="button", data-bs-toggle="dropdown")
           ul.dropdown-menu.dropdown-menu-end
             li: a.dropdown-item(href="#") Profile
-            li: a.dropdown-item(href="#") Logout
+            li: a.dropdown-item(href="login.html") Logout
+
+        // 👇 Hidden by default — only shown on login/signup pages
+    .auth-buttons.d-none
+      a.btn.btn-outline-primary.me-2(href="login.html") Login
+      a.btn.btn-primary(href="signup.html") Sign Up
 
     
